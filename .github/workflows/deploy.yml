@@ -16,5 +16,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
           github_token: ${{ secrets.P_SECRET }}
           publish_dir: .  # Change this to your root or specific folder
